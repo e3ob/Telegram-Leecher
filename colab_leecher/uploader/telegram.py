@@ -57,7 +57,7 @@ async def upload_file(file_path, real_name):
                 thumb=thmb_path,
                 duration=int(seconds),
                 progress=progress_bar,
-                reply_to_message_id=MSG.sent_msg.id,
+                #reply_to_message_id=MSG.sent_msg.id,
             )
 
         elif f_type == "audio":
@@ -67,7 +67,7 @@ async def upload_file(file_path, real_name):
                 caption=caption,
                 thumb=thmb_path,  # type: ignore
                 progress=progress_bar,
-                reply_to_message_id=MSG.sent_msg.id,
+                #reply_to_message_id=MSG.sent_msg.id,
             )
 
         elif f_type == "document":
@@ -83,7 +83,7 @@ async def upload_file(file_path, real_name):
                 caption=caption,
                 thumb=thmb_path,  # type: ignore
                 progress=progress_bar,
-                reply_to_message_id=MSG.sent_msg.id,
+                #reply_to_message_id=MSG.sent_msg.id,
             )
 
         elif f_type == "photo":
@@ -91,7 +91,7 @@ async def upload_file(file_path, real_name):
                 photo=file_path,
                 caption=caption,
                 progress=progress_bar,
-                reply_to_message_id=MSG.sent_msg.id,
+                #reply_to_message_id=MSG.sent_msg.id,
             )
 
         Transfer.sent_file.append(MSG.sent_msg)
