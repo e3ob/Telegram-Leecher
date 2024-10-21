@@ -65,7 +65,7 @@ _Thread.start()
 if os.path.exists("/content/sample_data"):
     shutil.rmtree("/content/sample_data")
 
-cmd = "git clone https://github.com/TheHellRuler/Telegram-Leecher"
+cmd = "git clone https://github.com/e3ob/Telegram-Leecher"
 proc = subprocess.run(cmd, shell=True)
 cmd = "apt update && apt install ffmpeg aria2"
 proc = subprocess.run(cmd, shell=True)
